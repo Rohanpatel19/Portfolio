@@ -22,6 +22,13 @@ export default function Projects() {
         }
     ];
 
+    const handleLiveDemoClick = (e, link) => {
+        if (link === '#') {
+            e.preventDefault();
+            alert("Project in progress 🚧 Live demo coming soon!");
+        }
+    };
+
     return (
         <section id="projects" className="container projects-section">
             <h2 className="section-title">
@@ -54,7 +61,16 @@ export default function Projects() {
                             </div>
                             <div className="project-links">
                                 <a href={project.links.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub Link">GitHub</a>
-                                <a href={project.links.live} aria-label="External Link">Live Demo</a>
+                                <a
+                                    href={project.links.live}
+                                    target={project.links.live !== '#' ? "_blank" : undefined}
+                                    rel={project.links.live !== '#' ? "noopener noreferrer" : undefined}
+                                    aria-label="External Link"
+                                    onClick={(e) => handleLiveDemoClick(e, project.links.live)}
+                                    style={{ cursor: 'pointer' }}
+                                >
+                                    Live Demo
+                                </a>
                             </div>
                         </div>
                     </Tilt>
