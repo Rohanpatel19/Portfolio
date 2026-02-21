@@ -6,13 +6,7 @@ export default function Projects() {
             title: 'This Exact Portfolio',
             description: "Wait, you're looking at it right now! I built this responsive, glassmorphic portfolio using React and AI tools because a simple PDF resume just wouldn't cut it. It's basically project inception.",
             tech: ['React', 'Vite', 'CSS Variables', 'AI'],
-            links: { github: 'https://github.com/Rohanpatel19', live: '#' }
-        },
-        {
-            title: 'cricScore & cricSCORECARD',
-            description: "Built a local live match scorecard and player statistics record system. Because tracking cricket stats by hand is so last century. I basically engineered myself a digital umpire.",
-            tech: ['C++', 'Data Structures', 'Algorithms'],
-            links: { github: 'https://github.com/Rohanpatel19/cricScore', live: '#' }
+            links: { github: 'https://github.com/Rohanpatel19/Portfolio', live: '#' }
         },
         {
             title: 'Flask Railway To-Do',
